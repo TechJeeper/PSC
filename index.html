@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The Plus Sized Cyclist - Cody Dean's cycling journey as an atypical rider."
+    />
+    <title>The Plus Sized Cyclist</title>
+    <link rel="icon" href="logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#top" class="brand">
+          <img
+            class="brand-logo"
+            src="logo.svg"
+            width="500"
+            height="200"
+            alt="Plus Sized Cyclist"
+            decoding="async"
+          />
+          <span class="brand-sub">Personal cycling journey from an atypical rider</span>
+        </a>
+
+        <button
+          id="menuToggle"
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="siteNav"
+          aria-label="Toggle navigation"
+        >
+          Menu
+        </button>
+
+        <nav id="siteNav" class="site-nav" aria-label="Main navigation">
+          <a href="#welcome">Welcome</a>
+          <a href="#about">About Cody</a>
+          <a href="#strava">Strava</a>
+          <a href="#instagram">Instagram</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="Intro">
+        <div class="container hero-layout">
+          <div class="hero-logo-panel">
+            <img
+              class="hero-logo"
+              src="logo.svg"
+              width="480"
+              height="200"
+              alt=""
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="hero-copy">
+            <h1>Welcome to The Plus Sized Cyclist</h1>
+            <p class="lead">
+              A place for riders who do not fit the traditional cycling mold. This site shares
+              Cody's journey getting fit on two wheels and encourages others to ride as they are.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="https://www.instagram.com/plussizedcyclist/" target="_blank" rel="noopener noreferrer">
+                Follow on Instagram
+              </a>
+              <a class="btn secondary" href="#welcome">Read the Story</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="welcome" class="section">
+        <div class="container prose">
+          <h2>Welcome!</h2>
+          <p>
+            Greetings! My name is Cody Dean and I am The Plus Sized Cyclist. This page is a home
+            for my journey to get fit by way of two wheels, along with product reviews and tips for
+            riders like me.
+          </p>
+          <p>
+            I am 6'4" and started this journey at about 360 lbs. I did not see many resources for
+            cyclists built like me, so I created this space to show that atypical cyclists belong on
+            the road and on the trail.
+          </p>
+          <p>
+            My early rides were only a few miles, and every mile mattered. Over time my range grew,
+            my fitness improved, and my love for cycling only got stronger. If you are starting from
+            zero, you are in the right place.
+          </p>
+        </div>
+      </section>
+
+      <section id="about" class="section alt">
+        <div class="container about-layout">
+          <div class="prose">
+            <h2>About Cody</h2>
+            <p>
+              Why "Plus Sized Cyclist?" At 6'4", I started this project around 360 lbs and found very
+              few cycling resources that spoke directly to bigger riders.
+            </p>
+            <p>
+              I rode "box store" bikes for years, then invested in myself with a proper local bike shop
+              bike. That process came with challenges, but it changed everything.
+            </p>
+            <p>
+              This site is here to show that you do not need a typical cyclist body type to belong in
+              the sport. If a bike helps you move forward, you belong.
+            </p>
+          </div>
+          <figure class="profile-photo-wrap">
+            <img
+              class="profile-photo"
+              src="me.jpg"
+              alt="Cody, The Plus Sized Cyclist"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section id="strava" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Strava</h2>
+            <p>Recent training and rides on Strava.</p>
+          </div>
+          <div class="strava-embed-wrap">
+            <div class="strava-embed-frame-wrap">
+              <iframe
+                class="strava-embed-iframe"
+                title="Cody Dean on Strava — latest rides"
+                width="300"
+                height="454"
+                allowtransparency="true"
+                frameborder="0"
+                scrolling="no"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.strava.com/athletes/22738670/latest-rides/df4fd2ca3c28c90d1a67a8a6006f85b7e1cffd86"
+              ></iframe>
+            </div>
+            <p class="embed-note strava-embed-fallback">
+              If the widget does not load, open
+              <a href="https://www.strava.com/athletes/22738670" target="_blank" rel="noopener noreferrer"
+                >Cody on Strava</a
+              >.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="instagram" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Instagram</h2>
+            <p>Follow recent posts from @plussizedcyclist.</p>
+          </div>
+          <div class="instagram-embed-wrap">
+            <blockquote
+              class="instagram-media"
+              data-instgrm-permalink="https://www.instagram.com/plussizedcyclist/"
+              data-instgrm-version="14"
+            >
+              <a href="https://www.instagram.com/plussizedcyclist/" target="_blank" rel="noopener noreferrer">
+                View @plussizedcyclist on Instagram
+              </a>
+            </blockquote>
+            <p class="embed-note">
+              If the embed does not load, open the profile directly:
+              <a href="https://www.instagram.com/plussizedcyclist/" target="_blank" rel="noopener noreferrer">
+                instagram.com/plussizedcyclist
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-identity">
+          <img
+            class="footer-logo"
+            src="logo.svg"
+            width="120"
+            height="48"
+            alt=""
+            loading="lazy"
+            decoding="async"
+          />
+          <span class="footer-copy">&copy; <span id="year"></span> The Plus Sized Cyclist</span>
+        </p>
+        <a href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script async src="https://www.instagram.com/embed.js"></script>
+  </body>
+</html>

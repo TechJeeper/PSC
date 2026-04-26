@@ -1,0 +1,363 @@
+:root {
+  /* Aligned with logo.svg wordmark fill + blue bike theme */
+  --bg: #0a121f;
+  --bg-alt: #101d2e;
+  --surface: #152a42;
+  --text: #eff6ff;
+  --muted: #b8cce3;
+  --accent: #2f80ed;
+  --accent-strong: #6aa9ff;
+  --border-on-accent: rgba(90, 163, 255, 0.32);
+  --border-on-accent-soft: rgba(90, 163, 255, 0.2);
+  --max-width: 1100px;
+  --radius: 14px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg-alt) 100%);
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  width: min(100% - 2rem, var(--max-width));
+  margin-inline: auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  background: rgba(10, 18, 31, 0.92);
+  border-bottom: 1px solid var(--border-on-accent);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 76px;
+}
+
+.brand {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.brand-logo {
+  display: block;
+  width: auto;
+  max-width: 12rem;
+  max-height: 2.75rem;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.35));
+}
+
+.brand-sub {
+  display: block;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.25;
+  max-width: 18rem;
+}
+
+.menu-toggle {
+  display: none;
+  border: 1px solid var(--border-on-accent);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--text);
+  padding: 0.45rem 0.75rem;
+  cursor: pointer;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--muted);
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  color: var(--accent);
+}
+
+.hero {
+  padding: 3.5rem 0 4rem;
+}
+
+.hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  gap: clamp(1.5rem, 4vw, 2.75rem);
+  align-items: center;
+}
+
+.hero-logo-panel {
+  border: 1px solid var(--border-on-accent);
+  border-radius: var(--radius);
+  background:
+    radial-gradient(ellipse 90% 75% at 50% 40%, rgba(47, 128, 237, 0.14) 0%, transparent 58%),
+    linear-gradient(165deg, rgba(21, 42, 66, 0.85) 0%, rgba(10, 18, 31, 0.55) 100%);
+  box-shadow: inset 0 1px 0 rgba(239, 246, 255, 0.06);
+  padding: clamp(1rem, 3vw, 1.75rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 10rem;
+}
+
+.hero-logo {
+  display: block;
+  width: 100%;
+  max-width: 22rem;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 12px rgba(47, 128, 237, 0.18));
+}
+
+.hero-copy h1 {
+  margin-top: 0;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  margin: 0.3rem 0 1rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.15;
+}
+
+.lead {
+  max-width: 72ch;
+  color: var(--muted);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.3rem;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 0.65rem 1rem;
+  font-weight: 700;
+}
+
+.btn.primary {
+  background: var(--accent);
+  color: #081323;
+}
+
+.btn.primary:hover,
+.btn.primary:focus-visible {
+  background: var(--accent-strong);
+}
+
+.btn.secondary {
+  border: 1px solid var(--border-on-accent);
+  color: var(--text);
+}
+
+.section {
+  padding: 3.5rem 0;
+}
+
+.section.alt {
+  background: rgba(16, 29, 46, 0.5);
+  border-block: 1px solid var(--border-on-accent-soft);
+}
+
+.section-head p {
+  margin-top: 0.3rem;
+  color: var(--muted);
+}
+
+.prose p {
+  color: var(--muted);
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.profile-photo-wrap {
+  margin: 0;
+  border: 1px solid var(--border-on-accent);
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 0.75rem;
+}
+
+.profile-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.instagram-embed-wrap {
+  margin-top: 1rem;
+  border: 1px solid var(--border-on-accent);
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+
+.instagram-media {
+  background: #fff;
+  border: 0;
+  border-radius: 10px;
+  margin: 0 auto 0.75rem auto;
+  min-width: 280px;
+  width: min(100%, 540px);
+}
+
+.embed-note {
+  margin: 0;
+  color: var(--muted);
+}
+
+.embed-note a {
+  color: var(--accent);
+}
+
+.strava-embed-wrap {
+  margin-top: 1rem;
+  border: 1px solid var(--border-on-accent);
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+
+.strava-embed-frame-wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.strava-embed-iframe {
+  display: block;
+  width: 300px;
+  max-width: 100%;
+  height: 454px;
+  border: 0;
+  border-radius: 8px;
+  background: #fff;
+  vertical-align: top;
+}
+
+.strava-embed-fallback {
+  margin-top: 0.75rem;
+  text-align: center;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border-on-accent-soft);
+  padding: 1rem 0;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--muted);
+}
+
+.footer-identity {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0;
+}
+
+.footer-logo {
+  width: auto;
+  height: 1.75rem;
+  max-width: 7rem;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.3));
+}
+
+@media (max-width: 860px) {
+  .menu-toggle {
+    display: inline-block;
+  }
+
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 76px;
+    right: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.8rem;
+    min-width: 180px;
+    border: 1px solid var(--border-on-accent);
+    border-radius: 12px;
+    background: rgba(10, 18, 31, 0.98);
+  }
+
+  .site-nav.open {
+    display: flex;
+  }
+
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 2.5rem;
+  }
+
+  .instagram-media {
+    min-width: 240px;
+  }
+}

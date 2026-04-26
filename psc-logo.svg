@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268 40" role="img" aria-labelledby="pscWordmark">
+  <title id="pscWordmark">Plus Sized Cyclist</title>
+  <defs>
+    <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2f80ed" />
+      <stop offset="1" stop-color="#5aa3ff" />
+    </linearGradient>
+  </defs>
+  <rect width="40" height="40" rx="9" fill="#0d1726" />
+  <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="8" fill="none" stroke="url(#logoGrad)" stroke-width="1" />
+  <g fill="none" stroke="#c7d7ea" stroke-width="1.1" stroke-linecap="round">
+    <path d="M20 4v2.5" />
+    <path d="M18.9 5.2h2.2" />
+  </g>
+  <g fill="none" stroke="url(#logoGrad)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="10.5" cy="25" r="5.2" />
+    <circle cx="29.5" cy="25" r="5.2" />
+    <path d="M16 16h8.5l-3.2 7.8" />
+    <path d="M18 10.5l-1.8 5" />
+    <path d="M16.8 16.5l-3.3 0.8" />
+    <path d="M24.5 16L30.5 17" />
+  </g>
+  <text
+    x="48"
+    y="27"
+    font-family="Inter, 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif"
+    font-size="20"
+    font-weight="800"
+    letter-spacing="-0.02em"
+  >
+    <tspan fill="#eff6ff">Plus Sized</tspan>
+    <tspan fill="#eff6ff"> </tspan>
+    <tspan fill="url(#logoGrad)">Cyclist</tspan>
+  </text>
+</svg>
